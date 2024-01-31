@@ -4,6 +4,8 @@
     input.addEventListener('change', _ => {
       const reader = new window.FileReader()
       size = input.files[0].size;
+      console.log(files[0].name); 
+
       let img = document.createElement('img')
       img.setAttribute("id","theimage")
       reader.readAsDataURL(input.files[0])
